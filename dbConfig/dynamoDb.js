@@ -1,10 +1,10 @@
 require("dotenv").config();
 const AWS = require("aws-sdk");
-AWS.config.update({
-  region: "ap-south-1",
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-  secretAccessKey: process.env.AWS_ACCESS_KEY_SECRET
-});
+// AWS.config.update({
+//   region: "ap-south-1",
+//   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+//   secretAccessKey: process.env.AWS_ACCESS_KEY_SECRET
+// });
 const documentClient = new AWS.DynamoDB.DocumentClient({
   region: "ap-south-1"
 });
